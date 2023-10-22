@@ -3,8 +3,12 @@ let threadsSideRight = document.querySelector("#threadsList");
 const url = new URL(window.location);
 const param = url.searchParams;
 let post = param.get("post");
-console.log(!post);
-fetch("/assets/data/data.json")
+if (window.location.origin == "https://kikukeii.github.io") {
+  var base_url = "https://kikukeii.github.io/template-forum-bootstarp5";
+} else {
+  var base_url = "";
+}
+fetch(base_url + "/assets/data/data.json")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
