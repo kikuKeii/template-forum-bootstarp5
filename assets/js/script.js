@@ -13,7 +13,7 @@ fetch(base_url + "/assets/data/data.json")
   .then((data) => {
     console.log(data);
     data.thread.forEach((e) => {
-      threadsSideRight.innerHTML += `<a href="/threads/${e.slug}" class="btn btn-primary">
+      threadsSideRight.innerHTML += `<a href="${base_url}/threads/${e.slug}" class="btn btn-primary">
       ${e.name} <span class="badge text-bg-secondary">4</span>
     </a>`;
     });
@@ -39,7 +39,9 @@ fetch(base_url + "/assets/data/data.json")
                   <p class="card-text">
                     ${e.content.substring(0, 80)}...
                     </p>
-                    <a href="/post/?post=${e.slug}" class="btn btn-primary"
+                    <a href="${base_url}/post/?post=${
+          e.slug
+        }" class="btn btn-primary"
                     >Go somewhere</a
                   >
                 </div>
