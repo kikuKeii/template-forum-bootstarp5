@@ -1,0 +1,147 @@
+{
+    "user" : [
+        {
+            "id" : 1,
+            "email": "kikukeii@github.io",
+            "username" : "admin",
+            "password" : "admin",
+            "role" : "admin",
+            "status" : "active"
+        },
+        {
+            "id" : 2,
+            "email": "user@github.io",
+            "username" : "user",
+            "password" : "user",
+            "role" : "user",
+            "status" : "active"
+        }
+    ],
+    "thread" : [
+        {
+            "id" : 1,
+            "name" : "Code",
+            "slug": "code",
+            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "id" : 2,
+            "name" : "Software",
+            "slug": "software",
+            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+    ],
+    "post" : [
+        {
+            "id" : 1,
+            "user_id" : 1,
+            "title" : "Post 1",
+            "slug": "post-1",
+            "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "id" : 2,
+            "user_id" : 2,
+            "title" : "Post 2",
+            "slug": "post-2",
+            "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "id" : 3,
+            "user_id" : 1,
+            "title" : "Post 3",
+            "slug": "post-3",
+            "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "id" : 4,
+            "user_id" : 2,
+            "title" : "Post 4",
+            "slug": "post-4",
+            "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+    ],
+    "post_thread":[
+        {
+            "id" : 1,
+            "post_id" : 1,
+            "thread_id" : 1
+        },
+        {
+            "id" : 2,
+            "post_id" : 2,
+            "thread_id" : 2
+        },
+        {
+            "id" : 3,
+            "post_id" : 2,
+            "thread_id" : 1
+        },
+        {
+            "id" : 4,
+            "post_id" : 3,
+            "thread_id" : 2
+        },
+        {
+            "id" : 5,
+            "post_id" : 1,
+            "thread_id" : 2
+        }
+    ],
+    "comment" : [
+        {
+            "id" : 1,
+            "post_id" : 1,
+            "user_id" : 1,
+            "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "id" : 2,
+            "post_id" : 1,
+            "user_id" : 2,
+            "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "id" : 3,
+            "post_id" : 2,
+            "user_id" : 1,
+            "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+    ],
+    "up_vote_post" : [
+        {
+            "id" : 1,
+            "post_id" : 1
+        },
+        {
+            "id" : 2,
+            "post_id" : 2
+        },
+        {
+            "id" : 3,
+            "post_id" : 3
+        },
+        {
+            "id" : 4,
+            "post_id" : 4
+        },
+        {
+            "id" : 5,
+            "post_id" : 1
+        }
+    ],
+    "up_vote_commet" : [
+        {
+            "id" : 1,
+            "comment_id" : 1
+        },
+        {
+            "id" : 2,
+            "comment_id" : 2
+        },
+        {
+            "id" : 3,
+            "comment_id" : 3
+        }
+    ]
+}
